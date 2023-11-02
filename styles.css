@@ -1,0 +1,53 @@
+/* Import the Lato font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+/* Global styles */
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("https://wallpaperaccess.com/full/1773977.jpg");
+  background-blend-mode:color-dodge;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page title */
+h1 {
+  font-size: 60px;
+}
+
+/* Countdown container */
+.countdown {
+  display: flex;
+  transform: scale(2.5);
+}
+
+/* Individual time elements (days, hours, minutes, seconds) */
+.time {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:  .5s ease;
+  filter: drop-shadow(5px 5px 20px black);
+}
+
+/* Year display */
+.year {
+  font-size: 200px;
+  padding-top: 50px;
+  opacity: 0.6;
+  filter: drop-shadow(5px 5px 20px black);
+  transition:  .5s ease;
+}
+:is(.year,.time):hover{
+  filter: none;
+opacity: .8;
+}
