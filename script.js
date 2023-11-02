@@ -27,6 +27,9 @@ function updateCountdown() {
   seconds.innerHTML = s < 10 ? "0" + s : s;
  
 }
+window.onblur =  () =>  document.title = `Come Back  :( `
+
+window.onfocus = () =>  document.title = "New Year Countdown"
 
 setInterval(() => {
   updateCountdown();
